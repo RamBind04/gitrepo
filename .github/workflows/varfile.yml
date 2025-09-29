@@ -41,6 +41,7 @@ jobs:
           echo "this is our ${{vars.PROJECT_ID}}"
           echo "Current repo name: ${{github.repository}}"
           echo  "Workflow name: ${{github.workflow}}"
+          echo "my secritess is : ${{secrets.MY_KEY}}"
           
         env:
           full_name: Ram Bind
