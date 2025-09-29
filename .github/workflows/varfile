@@ -1,1 +1,15 @@
-
+name: this is demo var file
+  on:
+    workflow_dispatch
+  env:
+    cloud: AWS
+jobs:
+  demo_vars:
+    run-on: ubuntu-latest
+    env:
+      greeting: hello ji
+  steps:
+    - name: "Var job demo steps started"
+      run: echo "This is our $cloud for $greeting and my name is $first-name"
+      env:
+        first-name: RAM
