@@ -39,5 +39,8 @@ jobs:
         run: |
           echo "This is our $cloud for $greet1 and my name is $second_name"
           echo "this is our ${{vars.PROJECT_ID}}"
+          echo "Current repo name: ${{github.repository}}"
+          echo  "Workflow name: ${{github.workflow}}"
+          
         env:
           full_name: Ram Bind
