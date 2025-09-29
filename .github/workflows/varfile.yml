@@ -38,6 +38,6 @@ jobs:
       - name: "Var job demo third job started"
         run: |
           echo "This is our $cloud for $greet1 and my name is $second_name"
-          echo "this is our ${{var.PROJECT_ID}}"
+          echo "this is our ${{vars.PROJECT_ID}}"
         env:
           full_name: Ram Bind
