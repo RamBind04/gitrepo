@@ -16,3 +16,14 @@ jobs:
         run: echo "This is our $cloud for $greeting and my name is $FIRST_NAME"
         env:
           FIRST_NAME: RAM
+
+
+  test_vars_job:
+    runs-on: ubuntu-latest
+    env:
+      greet: Apple
+    steps:
+      - name: "Var job demo second job started"
+        run: echo "This is our $cloud for $greet and my name is $second_name"
+        env:
+          second_name: Bind
